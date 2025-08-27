@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/billiard_sticks.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="./index.html"><span class="icon"><img src="../img/Logo_shop.png"></span></a></li>
+      <li><a href="./billiard_sticks.html">GẬY BI A</a></li>
+      <li><a href="./billiards.html">VỀ BILLIARD</a></li>
+      <li><a href="./phukien.html">PHỤ KIỆN CHÍNH HÃNG</a></li>
+      <li><a href="./dich vu.html">DỊCH VỤ</a></li>
+      <li><a href="./lienhe.html">LIÊN HỆ</a></li>
+      <li class="cart-icon">
+
+        <a href="#" id="cart-toggle">🛒 (<span id="cart-count">0</span>)</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="products">
+      <div class="product">
+        <img src="../img/1-13-500x500.png" alt="">
+        <h3>Gậy Rhino RC23-09</h3>
+        <p>Giá: 3.000.000₫</p>
+        <button class="btn-cart" onclick="addToCart({ name: 'Gậy Rhino RC23-09', price: 3000000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: 'Gậy Rhino RC23-09', price: 3000000 })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/1-14-500x500.png" alt="">
+        <h3>Rhino RC23-24</h3>
+        <p>Giá: 3.200.000₫</p>
+        <button class="btn-cart" onclick="addToCart({ name: 'Rhino RC23-24 ', price: 3200000  })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: 'Rhino RC23-24 ', price: 3200000  })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/1-15-500x500.png" alt="">
+        <h3>Rhino RC23-22</h3>
+        <p>Giá: 2.800.000₫</p>
+        <button class="btn-cart" onclick="addToCart({ name: 'Gậy Rhino RC23-22', price: 2800000  })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: 'Gậy Rhino RC23-22', price: 2800000  })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/PTE.png" alt="">
+        <h3>Peri PTE-04</h3>
+        <p>Giá: 6.870.000₫</p>
+        <button class="btn-cart" onclick="addToCart({ name: ' Gậy Peri PTE-04 ', price: 6870000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: ' Gậy Peri PTE-04 ', price: 6870000 })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/cuetec Dakota đỏ.png" alt="">
+        <h3>Cuetec Dakota đỏ </h3>
+        <p>Giá: 18.500.000</p>
+        <button class="btn-cart" onclick="addToCart({ name: ' Gậy cuetec dakota đỏ ', price: 18500000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: ' Gậy cuetec dakota đỏ ', price: 18500000 })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/SVB CUETECDAKOTA trắng bản dành riêng cho SVB.png">
+        <h3>Cuetec Dakote trắng </h3>
+        <p>Giá: 20.780.000</p>
+        <button class="btn-cart" onclick="addToCart({ name: ' Gậy cuetec dakote trắng ', price: 20780000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: ' Gậy cuetec dakote trắng ', price: 20780000 })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/Svb-xanh-500x500.png" alt="">
+        <h3>Cuetec Dakote xanh</h3>
+        <p>Giá:19.000.000 </p>
+        <button class="btn-cart" onclick="addToCart({ name: ' Gậy cuetec dakote xanh ', price: 19000000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: ' Gậy cuetec dakote xanh ', price: 19000000 })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/phá feder ghort.png" alt="">
+        <h3>Gậy phá Cuetec breach </h3>
+        <p>Giá:13.500.000 </p>
+        <button class="btn-cart" onclick="addToCart({ name: ' Gậy Phá cuetec xanh ', price: 13500000  })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: ' Gậy Phá cuetec xanh ', price: 13500000  })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/nhảy.png" alt="">
+        <h3>gậy nhảy Cuetec propel</h3>
+        <p>Giá:13.500.000 </p>
+        <button class="btn-cart" onclick="addToCart({ name: 'Gậy nhảy cuetec propel', price: 13500000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: 'Gậy nhảy cuetec propel', price: 13500000 })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/feder ghost.png" alt="">
+        <h3>nhảy the crack </h3>
+        <p>Giá:2.800.000 </p>
+        <button class="btn-cart" onclick="addToCart({ name: 'Gậy Nhảy the Crack', price: 2800000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: 'Gậy Nhảy the Crack', price: 2800000 })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/breach ghost.png" alt="">
+        <h3> gậy breach ghost </h3>
+        <p>Giá:17.800.000 </p>
+        <button class="btn-cart" onclick="addToCart({ name: 'Gậy nhảy', price: 17800000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: 'Gậy nhảy', price: 17800000 })">⚡ Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="../img/daivd lomen.webp" alt="">
+        <h3>ngọn david loman classic</h3>
+        <p>Giá:4.590.000 </p>
+        <button class="btn-cart" onclick="addToCart({ name: 'Gậy ngọn davil loman', price: 4590000 })">🛒 Thêm vào giỏ</button>
+        <button class="btn-buy" onclick="buyNow({ name: 'Gậy ngọn david loman', price: 4590000 })">⚡ Mua ngay</button>
+      </div>
+    </section>
+  </main>
+
+<!-- Giao diện giỏ hàng -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>🛒 Giỏ hàng</h2>
+  <div id="cart-items"></div>
+  <div class="cart-footer">
+    <h3>Tổng cộng: <span id="cart-total">0</span>₫</h3>
+    <button id="checkout">Thanh toán</button>
+  </div>
+</div>
+
+
+  <!-- Hotline -->
+  <div class="hotline">
+    📞 Hotline : <span class="phone">0567178888</span>
+    <span class="support">Dịch vụ hỗ trợ bạn 24/7</span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Cột 1 -->
+      <div>
+        <h3>Magic Billiard Shop</h3>
+        <p>Đơn vị cung cấp Gậy và Phụ Kiện Billiard chính hãng</p>
+        <p>📍 Địa chỉ: 25 Trung Phụng, P. Thổ Quan, Q. Đống Đa, Hà Nội</p>
+        <p>📞 Số điện thoại: 0567178888</p>
+        <p>✉️ Email: dangthanhkienvn@gmail.com</p>
+        <p>© Bản quyền thuộc về EGANY | Cung cấp bởi Sapo</p>
+      </div>
+
+      <!-- Cột 2 -->
+      <div>
+        <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+        <a href="./index.html">TRANG CHỦ</a>
+        <a href="./billiard_sticks.html">CƠ (GẬY) BI A</a>
+        <a href="./phukien.html">PHỤ KIỆN ĐI KÈM</a>
+        <a href="#">BÀN BI-A</a>
+        <a href="./dich vu.html">DỊCH VỤ</a>
+        <a href="#">TIN TỨC</a>
+        <a href="./billiards.html">GIỚI THIỆU</a>
+        <a href="./lienhe.html">LIÊN HỆ</a>
+      </div>
+
+
+      <!-- Cột 3 -->
+      <div>
+        <h3>CHÍNH SÁCH</h3>
+        <a href="#">Hướng dẫn mua hàng</a>
+        <a href="#">Hướng dẫn thanh toán</a>
+        <a href="#">Hướng dẫn giao nhận</a>
+        <a href="#">Điều khoản dịch vụ</a>
+      </div>
+
+      <!-- Cột 4 -->
+      <div>
+        <h3>ĐĂNG KÝ NHẬN TIN</h3>
+        <p>Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký ngay.</p>
+        <div class="subscribe">
+          <input type="email" placeholder="Nhập địa chỉ email">
+          <button>Đăng ký</button>
+        </div>
+        <div class="social-icons">
+          <img src="../img/zalo.png">
+          <img src="../img/youtube.png">
+          <img src="../img/social-media.png">
+          <img src="../img/facebook.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- Icon thanh toán -->
+    <div class="payment-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg">
+      <img src="../img/Momo.png">
+      <img src="../img/zalopay.png">
+      <img src="../img/cash-on-delivery.png">
+    </div>
+  </footer>
+
+  <!-- Icon nổi bên phải -->
+  <div class="side-icons">
+    <img src="../img/up-arrow.png">
+    <img src="../img/circle.png">
+    <img src="../img/zalo.png">
+    <img src="../img/messenger.png">
+  </div>
+
+  <script src="../js/billiard.js"></script>
+</body>
+
+</html>

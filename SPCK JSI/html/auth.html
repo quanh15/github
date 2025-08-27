@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billiard Login/Register</title>
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <!-- Form đăng nhập -->
+        <div class="form-box login">
+            <img src="../img/Logo_shop.png" alt="">
+            <h2>Đăng nhập</h2>
+            <form>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <button type="submit" class="btn">Đăng nhập</button>
+                <div class="google-btn">
+
+                    <span>Đăng nhập với Google</span>
+                </div>
+                <p class="switch">Chưa có tài khoản? <a href="#" id="show-register">Đăng ký</a></p>
+            </form>
+        </div>
+
+        <!-- Form đăng ký -->
+        <div class="form-box register">
+            <img src="../img/Logo_shop.png" alt="">
+            <h2>Đăng ký</h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Tên người dùng</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <button type="submit" class="btn">Đăng ký</button>
+                <div class="google-btn">
+
+                    <span>Đăng ký với Google</span>
+                </div>
+                <p class="switch">Đã có tài khoản? <a href="#" id="show-login">Đăng nhập</a></p>
+            </form>
+        </div>
+    </div>
+
+   
+    <script defer type="module" src="../js/auth.js"></script>
+</body>
+
+</html>

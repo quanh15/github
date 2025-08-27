@@ -1,0 +1,410 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.navbar {
+  background-color: #0e008b; /* Đỏ đậm */
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li img{
+  position: relative;
+  width: 60px;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #0e3d75;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 165, 0, 0.7);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  color: white;
+}
+
+.btn:hover {
+  background: rgba(255, 140, 0, 0.9);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+
+/* Nút bật/tắt chatbot */
+#chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 10000;
+}
+
+/* Chatbot mặc định ẩn */
+.chatbot-container {
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    position: fixed;
+    bottom: 80px;  /* để nổi trên nút toggle */
+    right: 20px;
+    z-index: 9999;
+
+    display: none; /* ban đầu ẩn */
+}
+
+/* Header */
+.chatbot-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Body */
+.chatbot-body {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #e0e0e0;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #e3f2fd;
+    align-self: flex-start;
+}
+
+/* Footer */
+.chatbot-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+#send-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer chính */
+/* ...existing code... */
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer-container p, 
+.footer-container a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+.footer-container a:hover {
+    color: #FFD700;
+}
+
+/* Đăng ký email */
+.subscribe {
+    display: flex;
+    margin-top: 10px;
+}
+.subscribe input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    flex: 1;
+    border-radius: 20px 0 0 20px;
+}
+.subscribe button {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+.subscribe button:hover {
+    background: #FFD700;
+}
+
+/* Icon mạng xã hội */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* Icon thanh toán */
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.payment-icons img {
+    height: 28px;
+}
+
+/* Thanh icon nổi bên phải */
+.side-icons {
+    position: fixed;
+    right: 15px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.side-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0 30px;
+  font-size: 26px;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.logo-box {
+  width: 180px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.logo-box:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: scale(1.05);
+}
+
+.logo-box img {
+  max-width: 140px;
+  max-height: 80px;
+  object-fit: contain;
+}
+/* danh mục sản phẩm */
+.products {
+  padding: 40px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 26px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.product-item {
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 220px;
+  height: auto;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.product-item img:hover {
+  transform: scale(1.05);
+}
+
+.product-item .brand {
+  font-size: 12px;
+  color: gray;
+  margin: 5px 0;
+  letter-spacing: 2px;
+}
+
+.product-item h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.product-item .price {
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-all a {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #000;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+}
+
+.view-all a:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+

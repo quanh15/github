@@ -1,0 +1,207 @@
+/* Cấu hình cơ bản */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Dịch vụ Bi-a */
+.services-section {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-box h3 {
+  color: #0066cc;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.service-box p {
+  color: #444;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: #0e008b; /* Đỏ đậm */
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li img{
+  position: relative;
+  width: 60px;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #0e3d75;
+}
+/* Hotline */
+.hotline {
+    background: #FFD700;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.hotline .phone {
+    color: #000;
+    font-weight: bold;
+}
+.hotline .support {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Footer chính */
+/* ...existing code... */
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer-container p, 
+.footer-container a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+.footer-container a:hover {
+    color: #FFD700;
+}
+
+/* Đăng ký email */
+.subscribe {
+    display: flex;
+    margin-top: 10px;
+}
+.subscribe input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    flex: 1;
+    border-radius: 20px 0 0 20px;
+}
+.subscribe button {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+.subscribe button:hover {
+    background: #FFD700;
+}
+
+/* Icon mạng xã hội */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* Icon thanh toán */
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.payment-icons img {
+    height: 28px;
+}
+
+/* Thanh icon nổi bên phải */
+.side-icons {
+    position: fixed;
+    right: 15px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.side-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
